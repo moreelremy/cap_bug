@@ -6,7 +6,7 @@
   "license": "UNLICENSED",
   "private": true,
   "dependencies": {
-    "@sap/cds": "^8",
+    "@sap/cds": "^8.2.1",
     "express": "^4"
   },
   "devDependencies": {
@@ -15,5 +15,13 @@
   },
   "scripts": {
     "start": "cds-serve"
+  },
+  "cds": {
+    "requires": {
+      "sap_s4_CE_BILLINGDOCUMENT_0001_v1": {
+        "kind": "odata",
+        "model": "srv/external/sap-s4-CE_BILLINGDOCUMENT_0001-v1"
+      }
+    }
   }
 }
