@@ -23,6 +23,17 @@
   },
   "cds": {
     "requires": {
+      "auth": {
+        "kind": "mocked",
+        "users": {
+          "admin": {
+            "password": "admin",
+            "roles": [
+              "admin"
+            ]
+          }
+        }
+      },
       "sap_s4_CE_BILLINGDOCUMENT_0001_v1": {
         "kind": "odata",
         "model": "srv/external/sap-s4-CE_BILLINGDOCUMENT_0001-v1",
