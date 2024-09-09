@@ -8,7 +8,7 @@ module.exports = cds.service.impl(async function () {
         return await billingApi.run(req.query);
     });
 
-    this.on('READ', 'DocumentItem', async req => {
+    this.on('READ', 'DocumentItems', async req => {
         return await billingApi.run(req.query);
     });
 })
