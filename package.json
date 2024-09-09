@@ -24,13 +24,16 @@
   "cds": {
     "requires": {
       "auth": {
-        "kind": "mocked",
+        "kind": "basic",
         "users": {
-          "admin": {
-            "password": "admin",
+          "user1": {
+            "password": "pass_user1",
             "roles": [
-              "admin"
-            ]
+              "CustomerBasic"
+            ],
+            "attr": {
+              "customerId": "17100001"
+            }
           }
         }
       },
@@ -47,5 +50,8 @@
         }
       }
     }
-  }
+  },
+  "sapux": [
+    "app/cap_bug"
+  ]
 }
